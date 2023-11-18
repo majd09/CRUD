@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+</head>
+
+<body>
+
+  <div class="container  shadow-lg my-4 p-5 rounded-4" >
+
+    <input id="prodName" type="text" class="form-control my-3" placeholder="Enter product name">
+    <input id="prodPrice" type="number" class="form-control my-3" placeholder="Enter product price">
+    <textarea id="prodDesc"  cols="30" rows="5" class="form-control" placeholder="Enter Product Description"></textarea>
+    <button onclick="AddProduct()" class="btn btn-outline-primary my-3">Add product</button>
+    <input id="search" onkeyup="search(this.value)" type="text"class="form-control w-50 m-auto" placeholder="Search...">
+  </div>
+
+  <div class="container my-5 shadow">
+    <table class="table table-hover text-center">
+      <thead>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Actions</th>
+      </thead>
+      <tbody id="demo">
+      
+      </tbody>
+    </table>
+    
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
